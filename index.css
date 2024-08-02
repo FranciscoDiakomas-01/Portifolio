@@ -1,0 +1,363 @@
+*{
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+button{
+    cursor: pointer;
+}
+body{
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 99;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 50px;
+    font-size: 13pt;
+}
+.logo{
+    font-size: 22pt;
+}
+
+nav a{
+    color: black;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+main{
+    min-height: 100dvh;
+    display: flex;
+    padding: 100px;
+    justify-content: space-evenly;
+    padding-top: 150px;
+    gap: 70px;
+    width: 100%;
+}
+article > span{
+    color: rgb(0, 123, 255);
+    font-weight: 500;
+    font-size: 15pt;
+}
+article h1{
+    font-size: 45pt;
+}
+
+h1 span{
+    color: black;
+}
+main article:first-of-type{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+article div {
+    display: flex;
+    gap: 50px;
+}
+
+article button{
+    width: 250px;
+    padding: 8px;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 5px;
+    font-size: 13pt;
+    color: white;
+    background-color: black;
+}
+.whiteBtn{
+    background-color: white;
+    color: black;
+}
+
+#sobre{
+    min-height: 100dvh;
+    padding: 100px;
+    padding-top: 150px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+#sobre article{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#sobre article:last-of-type{
+    width: 50%;
+}
+#sobre h1{
+    font-size: 18pt;
+}
+
+#sobre p{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#Skills{
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    justify-content: center;
+}
+
+#Skills aside{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+}
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+}
+aside h1{
+    font-size: 18pt;
+    margin-top: -50px;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.desc{
+    display: flex;
+    justify-content: space-between;
+}
+.progressbar{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background-color: rgb(209, 209, 209);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.progress{
+    position: absolute;
+    background-color:  rgb(0, 123, 255);
+    height: 100%;
+    width: 95%;
+}
+
+.mysql{
+    width: 75%;
+}
+.node{
+    width: 80%;
+}
+.react{
+    width: 70%;
+}
+.css{
+    width: 95%;
+}
+.js{
+    width: 80%;
+}
+.projects{
+    display: flex;
+    gap: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+.project h2{
+    color: rgb(0, 123, 255);
+}
+
+#contact{
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+#contact article{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 50px;
+}
+#contact aside{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+#contact aside > div{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#contact aside > div i{
+    background-color: rgb(0, 123, 255);
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 14pt;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#contact form div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+
+
+
+div input{
+    height: 40px;
+    width: 300px;
+    padding: 0px 8px;
+    background-color: transparent;
+    border: solid 0.5px;
+    outline: none;
+    border-radius: 4px;
+}
+textarea{
+    height: 150px;
+    border-radius: 4px;
+    padding: 5px 8px;
+    outline: none;
+}
+form button{
+    width: 200px;
+    border-radius: 50px;
+
+}
+
+
+#modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+#modal article{
+    display: flex;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 1000px;
+}
+#modal div{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px 20px;
+}
+
+#modal form{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    position: relative;
+}
+
+#modal i{
+    position: absolute;
+    color: black;
+    bottom: 15px;
+    cursor: pointer;
+    right: 80px;
+    font-size: 15pt;
+}
+#modal input{
+    height: 45px;
+    border: none;
+    width: 350px;
+    padding: 0px 8px;
+    border-radius: 5px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 100px;
+}
+footer a{
+    color: black;
+}
+footer > div{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+h1{
+    color: rgb(0, 123, 255);
+    
+}
+footer i{
+    font-size: 17pt;
+}
+footer div > div{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer > p{
+    text-align: center;
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+}
+.inicial , .img , .img2 , .sobre, .html5, .reactJS , .Node , .MYSQL , .myInfo,.modal{
+    visibility: hidden;
+}
