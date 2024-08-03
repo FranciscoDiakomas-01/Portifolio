@@ -323,6 +323,81 @@ form button{
     padding: 0px 8px;
     border-radius: 5px;
 }
+
+#works{
+    min-height: 100dvh;
+    display: flex;
+    padding: 100px;
+    padding-top: 150px;
+    gap: 10px;
+    flex-direction: column;
+    gap: 40px;
+}
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+#works img{
+    height: 300px;
+}
+figure{
+    padding: 50px;
+    background-color: rgba(243, 239, 239, 0.695);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+}
+figcaption{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+figcaption div{
+    display:flex;
+    width: 100%;
+    gap: 15px;
+}
+figcaption button{
+    padding: 7px;
+    width: 125px;
+    border: none;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 12pt;
+}
+.header button{
+    padding: 8px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 13pt;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+.projectWork{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    gap: 20px;
+}
+
 footer{
     display: flex;
     flex-direction: column;
