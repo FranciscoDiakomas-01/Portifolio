@@ -426,6 +426,9 @@ footer ul{
     display: none;
     font-size: 18pt;
 }
+#mobileFooter{
+    display: none;
+}
 /*tablet*/
 @media (min-width: 768px) and (max-width: 1024px) {
 
@@ -575,6 +578,7 @@ footer ul{
             flex-direction: column;
             gap: 80px;
             padding: 90px;
+            margin-top: -200px;
         }
         footer > div{
             display: grid;
@@ -594,4 +598,251 @@ footer ul{
             cursor: pointer;
         }
         
+}
+
+
+/*mobile*/
+@media (max-width: 600px) {
+    nav ul{
+        display: none;
+    }
+    #hambuguer{
+        display: flex;
+        font-size: 18pt;
+        cursor: pointer;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px 15px;
+        font-size: 13pt;
+    }
+    main{
+        padding: 10px;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    main article:first-of-type{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        padding: 20px;
+    }
+    article div {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    article h1{
+        font-size: 25pt;
+        display: flex;
+        gap: 5px;
+        word-wrap: break-word;
+        flex-wrap: wrap;
+    }
+    article button{
+        width: 100%;
+        padding: 7px;
+        font-size: 12pt;
+    }
+    main article:last-of-type{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    main img{
+        height: 300px;
+        width: 300px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #sobre{
+        display: flex;
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+    #sobre article:last-of-type{
+        width: 100%;
+    }
+    #optional{
+        display: none;
+    }
+    #Skills{
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        gap: 40px;
+        justify-content: center;
+    }
+    
+    #Skills aside{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+    .skills{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 70px;
+        align-items: center;
+        justify-content: center;
+    }
+    aside h1{
+        font-size: 20pt;
+        margin-top: 0px;
+    }
+    .skill{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+    }
+    .projects{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projectWork{
+        display:flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        
+    }
+    figure{
+        padding: 20px;
+        background-color: rgba(245, 245, 245, 0.888);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        cursor: pointer;
+        width: 250px;
+        overflow: hidden;
+        padding: 5px;
+    }
+    figcaption div{
+        display:flex;
+        width: 100%;
+        gap: 5px;
+    }
+    .header{
+        display: flex;
+        padding: 10px;
+    }
+    .header button{
+        width: 150px;
+    }
+    .header h2{
+        font-size: 15pt;
+    }
+    #contact{
+        padding: 150px 10px;
+    }
+
+    #contact article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 50px;
+    }
+
+            
+    #contact aside{
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+            align-items: center;
+            justify-content: center;
+    }
+        
+    #contact aside > div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+            text-align: center;
+    }
+    #contact aside > div i{
+            background-color: rgb(0, 123, 255);
+            color: white;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            border-radius: 50%;
+            font-size: 14pt;
+    }
+    #contact form div{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #contact button{
+        border-radius: 0px;
+        border: none;
+    }
+    
+    figcaption button{
+        padding: 3px;
+        width: 115px;
+        color: white;
+        background-color: black;
+        border: none;
+        border-radius: 4px;
+        gap: 5px;
+        font-size: 11pt;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        width: 100%;
+    }
+
+    #defautFooter{
+        display: none;
+    }
+    #mobileFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #footer-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+    #social{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    footer ul{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
 }
