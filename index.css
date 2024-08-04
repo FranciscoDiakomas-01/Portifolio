@@ -275,59 +275,10 @@ form button{
 
 }
 
-
-#modal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    margin-top: 50px;
-}
-
-#modal article{
-    display: flex;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    width: 1000px;
-}
-#modal div{
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    padding: 0px 20px;
-}
-
-#modal form{
-    display: flex;
-    align-items: center;
-    width: 50%;
-    position: relative;
-}
-
-#modal i{
-    position: absolute;
-    color: black;
-    bottom: 15px;
-    cursor: pointer;
-    right: 80px;
-    font-size: 15pt;
-}
-#modal input{
-    height: 45px;
-    border: none;
-    width: 350px;
-    padding: 0px 8px;
-    border-radius: 5px;
-}
-
 #works{
     min-height: 100dvh;
     display: flex;
-    padding: 100px;
+    padding: 5px;
     padding-top: 150px;
     gap: 10px;
     flex-direction: column;
@@ -342,11 +293,13 @@ form button{
 
 }
 #works img{
-    height: 300px;
+    height: 250px;
+    width: 100%;
+    align-items: center;
 }
 figure{
-    padding: 50px;
-    background-color: rgba(243, 239, 239, 0.695);
+    padding: 30px;
+    background-color: rgba(245, 245, 245, 0.888);
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -365,7 +318,7 @@ figcaption div{
     gap: 15px;
 }
 figcaption button{
-    padding: 7px;
+    padding: 5px;
     width: 125px;
     border: none;
     color: white;
@@ -393,7 +346,7 @@ figcaption button{
 }
 .projectWork{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 10px;
     gap: 20px;
 }
@@ -433,6 +386,212 @@ footer ul{
     display: flex;
     flex-direction: column;
 }
-.inicial , .img , .img2 , .sobre, .html5, .reactJS , .Node , .MYSQL , .myInfo,.modal{
+.inicial , .img , .img2 , .sobre, .html5, .reactJS , .Node , .MYSQL , .myInfo,.modal , .dev{
     visibility: hidden;
+}
+
+
+.hamburguer{
+    z-index: 999;
+    display: none;
+    position: fixed;
+    background-color:white;
+    width: 100%;
+    bottom: 0;
+    height: 93dvh;
+    justify-content: center;
+    padding: 100px;
+}
+.visible{
+    display: flex;
+}
+.hamburguer ul{
+    list-style: none;
+    font-size: 14pt;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.hamburguer a{
+    color: black;
+    font-weight: 500;
+}
+
+.header{
+    display: flex;
+    padding: 50px;
+}
+
+#hambuguer{
+    display: none;
+    font-size: 18pt;
+}
+/*tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    main{
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        padding: 100px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 150px;
+        gap: 70px;
+        width: 100%;
+    }
+    main article:first-of-type{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        justify-content: center;
+        padding: 20px;
+    }
+    article div {
+        display: flex;
+        gap: 50px;
+    }
+    article h1{
+        font-size: 30pt;
+        display: flex;
+        gap: 10px;
+    }
+    
+    article button{
+        width: 250px;
+        padding: 8px;
+        background-color: transparent;
+        border: 2px solid;
+        border-radius: 5px;
+        font-size: 13pt;
+        color: white;
+        background-color: black;
+    }
+    article div {
+        display: flex;
+        gap: 20px;
+    }
+
+    #sobre{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #sobre article:last-of-type{
+        width: 100%;
+    }
+    .projectWork{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 20px;
+        padding: 70px;
+        
+    }
+    figure{
+        padding: 20px;
+        background-color: rgba(245, 245, 245, 0.888);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        cursor: pointer;
+        width: 300px;
+    }
+
+    #Skills{
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        padding: 100px;
+        gap: 40px;
+        justify-content: center;
+    }
+    
+    #Skills aside{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+    .skills{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 70px;
+        align-items: center;
+        justify-content: center;
+    }
+    aside h1{
+        font-size: 20pt;
+        margin-top: 0px;
+    }
+    .skill{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+    }
+
+    #contact article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 50px;
+    }
+
+            
+        #contact aside{
+            display: flex;
+            flex-direction: row;
+            gap: 35px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #contact aside > div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+            text-align: center;
+        }
+        #contact aside > div i{
+            background-color: rgb(0, 123, 255);
+            color: white;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            border-radius: 50%;
+            font-size: 14pt;
+        }
+
+
+        footer{
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+            padding: 90px;
+        }
+        footer > div{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            column-gap: 100px;
+        }
+        footer div > div{
+            display: flex;
+        }
+        nav ul{
+            display: none;
+        }
+        #hambuguer{
+            display: flex;
+            font-size: 18pt;
+            cursor: pointer;
+        }
+        
 }

@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="Captura_de_ecrã_2024-08-02_011716-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script defer src="index.js"></script>
 </head>
 <body>
 
@@ -39,9 +40,31 @@
                     <a href="#contact">Contacto</a>
                 </li>
             </ul>
+            <div id="hambuguer">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </nav>
     </header>
 
+    <div class="hamburguer" id="HamBar">
+        <ul>
+            <li>
+                <a href="#home">Inicial</a>
+            </li>
+            <li>
+                <a href="#sobre">Sobre</a>
+            </li>
+            <li>
+                <a href="#Skills">Habilidades</a>
+            </li>
+            <li>
+                <a href="#works">Projectos</a>
+            </li>
+            <li>
+                <a href="#contact">Contacto</a>
+            </li>
+        </ul>
+    </div>
     <main id="home">
         <article class="inicial">
             <span>Olá, eu sou</span>
@@ -241,7 +264,7 @@
         </div>
 
         <div class="projectWork">
-            <figure>
+            <figure class="dev">
                 <img src="Captura de ecrã 2024-08-03 030541.png" alt="cover">
                 <figcaption>
                     <span>App Clima</span>
@@ -263,7 +286,7 @@
                 
             </figure>
 
-            <figure>
+            <figure class="dev">
                 <img src="Captura de ecrã 2024-08-03 030624.png" alt="cover">
                 <figcaption>
                     <span>Calculadora de IMC</span>
@@ -284,7 +307,7 @@
                 </figcaption>
                 
             </figure>
-            <figure>
+            <figure class="dev">
                 <img src="Captura de ecrã 2024-08-03 040312.png" alt="cover">
                 <figcaption>
                     <span>Tela de Login</span>
@@ -305,6 +328,28 @@
                 </figcaption>
                 
             </figure>
+            <figure class="dev">
+                <img src="Captura de ecrã 2024-08-04 080840.png" alt="cover">
+                <figcaption>
+                    <span>Gerador de Senha</span>
+                    <div>
+                        <a href="https://gerador-de-senhas-dusky-eight.vercel.app/">
+                            <button>
+                                Deploy 
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </a>
+                        <a href="https://github.com/FranciscoDiakomas-01/Gerador-de-Senhas">
+                            <button>
+                                Repositório 
+                                <i class="fa-brands fa-github"></i>
+                            </button>
+                        </a>
+                    </div>
+                </figcaption>
+                
+            </figure>
+            
         </div>
 
     </section>
@@ -360,19 +405,6 @@
         </article>
     </section>
 
-    <section id="modal">
-        <article class="modal">
-            <div>
-                <span>Subscreve agora!</span>
-                <h2>Obtenha as Novidades</h2>
-                <p>do meu portólio sempre que estiverem disponíveis</p>
-            </div>
-            <form action="">
-                <input type="email" placeholder="Email">
-                <i class="fa-solid fa-paper-plane"></i>
-            </form>
-        </article>
-    </section>
     <footer class="footer">
         <div>
             <div>
@@ -388,10 +420,7 @@
             </div>
             <div>
                 <h2>Redes</h2>
-                <div>
-                    <a href="https://github.com/FranciscoDiakomas-01">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
+                <div id="social">
                     <a href="https://www.facebook.com/profile.php?id=61560288840032">
                         <i class="fa-brands fa-facebook"></i>
                     </a>
@@ -405,21 +434,20 @@
             </div>
             <div>
                 <h3>Serviços</h3>
-                <div>
+                <div id="social">
                     <p>FrontEnd</p>
                     <p>Backend</p>
-                    <p>Banco de Dados</p>
-                    <p>Marketing Digital</p>
+                    <p>Batabase</p>
                     <p></p>
                 </div>
             </div>
             <div>
                 <h3>Links</h3>
                 <ul>
-                    <a href="">Inicial</a>
-                    <a href="">Sobre</a>
-                    <a href="">Habilidades</a>
-                    <a href="">Projecto</a>
+                    <a href="#home">Inicial</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#skills">Habilidades</a>
+                    <a href="#works">Projecto</a>
                     <a href="">Blog</a>
                 </ul>
             </div>
@@ -443,12 +471,13 @@
 
         
     );
-    ScrollReveal().reveal('.modal',
+    ScrollReveal().reveal('.dev',
         { 
             reset: true,
-            delay: 500,
+            delay: 700,
             distance: '100%',
-            origin: 'left'
+            origin: 'left',
+            duration: 900
         }
 
         
