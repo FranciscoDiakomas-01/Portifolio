@@ -577,7 +577,7 @@ footer ul{
             display: flex;
             flex-direction: column;
             gap: 80px;
-            padding: 90px;
+            padding: 100px;
             margin-top: -200px;
         }
         footer > div{
