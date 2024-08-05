@@ -778,8 +778,6 @@ footer ul{
             text-align: center;
     }
     #contact aside > div i{
-            background-color: rgb(0, 123, 255);
-            color: white;
             height: 50px;
             display: flex;
             align-items: center;
@@ -845,3 +843,4 @@ footer ul{
         flex-wrap: wrap;
     }
 }
+

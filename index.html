@@ -11,7 +11,9 @@
     <link rel="shortcut icon" href="Captura_de_ecrã_2024-08-02_011716-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <script defer src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="index.js"></script>
 </head>
 <body>
 
@@ -393,15 +395,15 @@
                 
             </aside>
             <aside class="Form">
-                <form action="">
+                <form id="form1">
                     <div id="formulario">
-                        <input type="text" placeholder="Nome">
-                        <input type="email" placeholder="Email">
-                        <input type="tel" placeholder="Telefone">
-                        <input type="text" placeholder="Assunto">
+                        <input type="text" placeholder="Nome" id="name">
+                        <input type="email" placeholder="Email" id="email">
+                        <input type="tel" placeholder="Telefone" id="tel">
+                        <input type="text" placeholder="Assunto" id="subject">
                     </div>
-                    <textarea placeholder="Mensagem"></textarea>
-                    <button>Enviar</button>
+                    <textarea placeholder="Mensagem" id="msg"></textarea>
+                    <button id="submit">Enviar</button>
                 </form>
             </aside>
         </article>
