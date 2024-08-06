@@ -659,8 +659,10 @@ footer ul{
     }
 
     #sobre{
-        display: flex;
+        display: flex; 
+        padding: 10px;
         padding-top: 150px;
+       
         padding-bottom: 50px;
     }
     #sobre article:last-of-type{
