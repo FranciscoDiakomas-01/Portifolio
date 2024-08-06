@@ -660,9 +660,8 @@ footer ul{
 
     #sobre{
         display: flex; 
-        padding: 10px;
+        padding: 50px;
         padding-top: 150px;
-       
         padding-bottom: 50px;
     }
     #sobre article:last-of-type{
